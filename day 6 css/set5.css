@@ -1,0 +1,11 @@
+div
+{
+     height:100px;
+     width:100px;
+     background-image: url("pexels-sara-sukosd-17152635.jpg");
+     background-size: cover;
+     color: rgb(205, 85, 25);
+     position: fixed;
+     right:0px; 
+     top:50px;
+}

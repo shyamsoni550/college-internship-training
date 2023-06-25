@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selector</title>
+    <style>
+
+        *
+        {
+            border-radius: 1%;
+        }
+
+        div
+        {
+            padding: 5%;
+            margin: 5%;
+            background-color: darkgray;
+        }
+
+        h1
+        {
+        text-align: center;
+        }
+
+        .para1
+        {
+            color: blue;
+            font-size: 28px;
+            margin: 5%;
+        }
+
+        #para2
+        {
+            color: chocolate;
+            background-color: whitesmoke;
+            font-size: 20px;
+            margin: 5%;
+        }
+
+         div .para3 /* div-> (class="para3") */
+        {
+            color: blueviolet;
+            background-color: lavender;
+            font-size: 20px;
+            border: 3px black dotted;
+            height: 150px;
+            width: 300px;
+            padding: 20px;        
+            margin-right: 100px;    
+        }
+
+        .img1{
+            display: flexbox;
+        }
+        .img .img1
+        {
+            width: 8rem; 
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>All selectors</h1>
+        <p class="para1">This is class selector</p>
+        <p id="para2">this is id selector</p>
+
+    </div>
+    <div class="img">
+        
+
+        <img src="pexels-consuelo-borroni-14894654.jpg" alt="img" class="img1">
+        <img src="pexels-sara-sukosd-17152635.jpg" alt="img" class="img1">
+        <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia quasi delectus commodi enim maxime in reiciendis optio, corrupti nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, sunt!</p>
+
+    </div>
+    
+</body>
+</html>

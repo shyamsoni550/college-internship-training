@@ -1,0 +1,64 @@
+/* #d1
+{
+     width: 80%;
+     height: 80%;
+     background-color: red;
+}
+
+@media(min-width:768px)
+{
+     #d1
+     {
+          width: 60%;
+          height: 60;
+          background-color: green;
+     }
+}
+
+@media(min-width:992px)
+{
+    #d1
+     {
+          width: 40%;
+          height: 40%;
+          background-color: yellow;
+     }
+}
+
+@media(min-width-1200px)
+{
+    #d1
+     {
+          width: 20%;
+          height: 20%;
+          background-color: black;
+     }
+} */
+
+.fullscreen_bg
+{
+     position: fixed;
+     top:0;
+     bottom: 0;
+     right: 0;
+     left: 0%;
+     overflow: hidden;
+     z-index: -1;
+     background-size: cover;
+}
+
+.fullscreen_bg_video
+{
+     position: fixed;
+     width:auto;
+     height: auto;
+     min-height: 100%;
+     min-width: 100%;
+
+}
+
+/* h2
+{
+     color: #ffffff;
+     font-style: italic;
+} */
