@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Tooltip</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <p>The data-placement attribute specifies the tooltip position.</p>
+  <ul class="list-inline">
+    <li><a href="page1.html"  data-toggle="tooltip" data-placement="top" title="Top Tooltip!">desktop </a></li>
+    <li><a href="Form2.html" data-toggle="tooltip" data-placement="bottom" title="Bottom Tooltip!">Bottom</a></li>
+    <li><a href="project1.html" data-toggle="tooltip" data-placement="left" title="Left Tooltip!">Left</a></li>
+    <li><a href="layout2.html" data-toggle="tooltip" data-placement="right" title="Right Tooltip!">Right</a></li>
+  </ul>
+  <br><br>
+  <ul class="list-inline">
+  <li><a href="page1.html"  data-toggle="tooltip" data-placement="top" title="Top Tooltip">    <img src="img1.jpeg" style="border : 2px solid rgb(25, 0, 255); height :300px; width :200px;"> </a></li>
+  <li><a href="Form2.html" data-toggle="tooltip" data-placement="bottom" title="Bottom Tooltip!">    <img src="img2.webp" style="border : 2px solid rgb(25, 0, 255); height :300px; width :200px;"</a></li>
+  <li><a href="project1.html" data-toggle="tooltip" data-placement="left" title="Left Tooltip!">    <img src="img3.jpeg" style="border : 2px solid rgb(25, 0, 255); height :300px; width :200px;"</a></li>
+  <li><a href="layout2.html" data-toggle="tooltip" data-placement="right" title="Right Tooltip!">    <img src="img4.jpeg" style="border : 2px solid rgb(25, 0, 255); height :300px; width :200px;"</a></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
+</html>
