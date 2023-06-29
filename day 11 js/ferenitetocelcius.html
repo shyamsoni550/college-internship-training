@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>ferenitetocelcius</title>
+
+<body>
+     <h1>JavaScript Functions</h1>
+     <p>Using a function as a variable:</p>
+     <p>
+          <label>ferenite</label>
+          <input id="inputfernite" type="number" placeholder="ferenite" oninput="tempratureconverter(this.value)"
+               onchange="tempratureConverter(this.value);">
+     </p>
+     <p>celcuis: <span id="outputCelcius"></span></p>
+     <script>
+          function tempratureConverter(valNum) {
+               valNum = parseFloat(valNum);
+               document.getElementById("outputCelcius").innerHTML = (valNum - 32) / 1.8;
+          } 
+     </script>
+</body>
+
+</html>
