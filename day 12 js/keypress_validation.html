@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Keypress Valaidation</title>
+<script>
+var specialKeys = new Array();
+specialKeys.push(8);
+// Number validation
+function IsNumeric(e)
+{
+var keyCode = e.which ? e.which : e.keyCode
+var value = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode)
+!= -1);
+document.getElementById("texterror").style.display = value ? "none" :
+"inline";
+return value;
+}
+// String validation
+function IsString(e)
+{
+var keyCode = e.which ? e.which : e.keyCode
+console.log(keyCode);
+var value = ((keyCode >= 64 && keyCode <= 91) || (keyCode >= 96 && keyCode <=
+123) || (keyCode == 32) || specialKeys.indexOf(keyCode) != -1);
+document.getElementById("text2error").style.display = value ? "none" :
+"inline";
+return value;
+}
+</script>
+</head>
+<body>
+<p>
+Numeric Value: <input type="text" id="text1" onkeypress="return
+IsNumeric(event);" />
+<span id="text1error" style="color: Red; display: none">* Input digits (0 -
+9)</span>
+</p>
+
+<p>
+String Value: <input type="text" id="text2" onkeypress="return IsString(event);"
+/>
+<span id="text2error" style="color: Red; display: none">* Input string & space
+</span>
+</p>
+</body>
+</html>
