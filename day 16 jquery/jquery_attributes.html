@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuary Attributes</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+//JQuery makes a use of anonymous functions
+$(document).ready(function () {
+$("#btn1").click(function () {
+var attrValues = "";
+
+attrValues += "Href : " + $("#home").attr("href") + "\n";
+attrValues += "Title : " + $("#home").attr("title") + "\n";
+attrValues += "Class : " + $("#home").attr("class");
+alert(attrValues);
+});
+$("#btn2").click(function () {
+var attrValues = "";
+attrValues += "Author Name : " + $("#div1").data("author-name") + "\n";
+attrValues += "Year : " + $("#div1").data("year") + "\n";
+alert(attrValues);
+});
+});
+</script>
+</head>
+<body>
+<a id="home" href="home.html" class="link" title="Click here goto Home Page ">
+Home
+</a>
+<br /><br />
+<button id="btn1">Get stander attributes values </button>
+<br /><br />
+<div id="div1" data-author-name="Manish Patel" data-year="2022">
+This is a Content part of div tag.
+</div>
+<br />
+<button id="btn2">Get custom attribute vlaues</button>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuary Serialize</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+//JQuery makes a use of anonymous functions
+$(document).ready(function () {
+$("#btn1").click(function (e) {
+e.preventDefault();
+var formData = $("form").serialize();
+$("#result").text(formData);
+});
+$("#btn2").click(function (e) {
+e.preventDefault();
+$("#result").text(""); // Set empty value
+var formArray = $("form").serializeArray();
+$.each(formArray, function (i, field) {
+$("#result").append(field.name + ":" + field.value + ",");
+});
+});
+});
+</script>
+<style>
+button {
+padding: 5px;
+font-size: 16px;
+}
+input {
+border: solid;
+border-width: 1px;
+width: 300px;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+<form action="" method="post">
+First name: <br />
+<input type="text" name="FirstName" placeholder="First Name">
+<br />
+Last name:
+<br />
+<input type="text" name="LastName" placeholder="Last Name">
+<br />
+<button id="btn1">Serialize Form Values</button>
+<button id="btn2">Serialize Array Form Values</button>
+</form>
+<div id="result"></div>
+</body>
+</html>

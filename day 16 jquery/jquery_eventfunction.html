@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuary Events</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+//JQuery makes a use of anonymous functions
+$(document).ready(function () {
+$("#btnBefore").click(function () {
+$("#message").before("<b> Before </b>");
+});
+$("#btnAppend").click(function () {
+$("#message").append("<b> Append </b>");
+});
+$("#btnAfter").click(function () {
+$("#message").after("<b> After </b>");
+});
+$("#btnEmpty").click(function () {
+$("#message").empty();
+});
+$("#btnRemove").click(function () {
+$("#message").remove();
+});
+$("#btnAddClass").click(function () {
+$("#message").addClass("color-red");
+});
+$("#btnRemoveClass").click(function () {
+$("#message").removeClass("color-red");
+});
+$("#btnToggleClass").click(function () {
+$("#message").toggleClass("color-red");
+});
+$("#btnSingleCss").click(function () {
+$("#message").css("background-color", "pink");
+});
+$("#btnMultipleCss").click(function () {
+$("#message").css({"background-color": "yellow", "font-size": "30px"});
+});
+$("#btnRemoveCss").click(function () {
+$("#message").removeAttr("style");
+});
+});
+</script>
+<style>
+.myMessage {
+font-size: 25px;
+text-align:center;
+
+color:#000000;
+}
+.color-red {
+color:#ff0000 !important;
+}
+</style>
+</head>
+<body>
+<div id="message" class="myMessage"> This is a HTML content function </div>
+<h4>Content Operation</h4>
+<button id="btnBefore">Text Before</button>
+<button id="btnAppend">Text Append</button>
+<button id="btnAfter">Text After</button>
+<button id="btnEmpty">Text Empty</button>
+<button id="btnRemove">Remove Tag</button>
+<h4>Class</h4>
+<button id="btnAddClass">Add Class</button>
+<button id="btnRemoveClass">Remove Class</button>
+<button id="btnToggleClass">Change Class</button>
+<h4>Css</h4>
+<button id="btnSingleCss">Single Css</button>
+<button id="btnMultipleCss">Multiple Css</button>
+<button id="btnRemoveCss">Remove Css</button>
+</body>
+</html>

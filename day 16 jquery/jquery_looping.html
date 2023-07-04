@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuary Looping</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function () {
+var arr = ["First", "Second", "Last"];
+jQuery.each(arr, function (index, value) {
+// Index / Value
+$("#ArrayValue").append("index:" + index + " value:" + value + " <br/>");
+});
+var data = [{ "Id": 1, "Name": "abc" },{ "Id": 2, "Name": "xyz" },{ "Id": 3,
+"Name": "lmn" }];
+$.each(data, function (i, item) {
+$("#JsonValue").append("index:" + i + " value:" + item.Name + " <br/>");
+
+});
+});
+</script>
+</head>
+<body>
+<div id="ArrayValue"></div> <br />
+<div id="JsonValue"></div>
+</body>
+</html>
