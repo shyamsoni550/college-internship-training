@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Autocomplete - Default functionality</title>
+		
+      <link rel = "stylesheet" 
+         href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+			
+      <script type = "text/javascript" 
+         src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js">
+      </script>
+		
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+  
+      <script>
+         $(function() {
+            var availableTags = [
+               "ActionScript",
+               "AppleScript",
+               "Asp",
+               "BASIC",
+               "C",
+               "C++",
+               "Clojure",
+               "COBOL",
+               "ColdFusion",
+               "Erlang",
+               "Fortran",
+               "Groovy",
+               "Haskell",
+               "Java",
+               "JavaScript",
+               "Lisp",
+               "Perl",
+               "PHP",
+               "Python",
+               "Ruby",
+               "Scala",
+               "Scheme"
+            ];
+				
+            $( "#tags" ).autocomplete({
+               source: availableTags
+            });
+				
+         });
+      </script>
+   </head>
+
+   <body>
+      <div class = "ui-widget">
+         <label for = "tags">Tags: </label>
+         <input id = "tags">
+      </div>
+ 
+   </body>
+</html>
