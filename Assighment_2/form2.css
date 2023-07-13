@@ -1,0 +1,77 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+h2 {
+     text-align: center;
+     color: #4CAF50;
+     border: 2px solid blanchedalmond;
+}
+
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     position: relative;
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("form.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.container {
+     min-width: 400px;
+     margin: 0 auto;
+     padding: 20px;
+     border-radius: 15px;
+     background-color: rgba(87, 2, 166, 0.721);
+     box-shadow: 0 0 10px rgb(0, 0, 0);
+     border: 2px solid black;
+}
+
+input {
+     outline: none;
+}
+
+.form-group {
+     margin-bottom: 15px;
+     color: aqua;
+}
+
+.form-group label {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+     width: 100%;
+     padding: 5px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+}
+
+.form-group textarea {
+     height: 100px;
+}
+
+.form-group .error-message {
+     color: red;
+}
+
+.success-message {
+     color: green;
+}
+
+button[type="submit"] {
+     padding: 10px 20px;
+     margin-top: 15px;
+     margin-left: 40%;
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     border-radius: 3px;
+     cursor: pointer;
+}
